@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="View a Case Record">
+        <div class="slds-m-around_medium">
+            <p>Case Subject: {subject}</p>
+            <p>Case Description: {description}</p>
+            <p>Case Web Phone: {phone}</p>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-button label="Subscribe" onclick={subscribeMC}></lightning-button>
+            <lightning-button label="Unsubscribe" onclick={unsubscribeMC}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

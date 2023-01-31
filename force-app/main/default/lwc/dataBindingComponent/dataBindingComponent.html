@@ -1,0 +1,8 @@
+<template>
+    <lightning-input label = "Enter First Name" name = "First" onchange={handleFirstName}></lightning-input>
+    <lightning-input label = "Enter Last Name" name = "Last" onchange={handleLastName} class="slds-m-bottom_small"></lightning-input>
+    <lightning-button label = "Get Full Name" variant="brand" onclick={handleCompleteInput} class="slds-m-top_small slds-p-around_small"></lightning-button>
+    <div if:true={isVisible}>
+        <p>{value}</p>
+    </div>
+</template>

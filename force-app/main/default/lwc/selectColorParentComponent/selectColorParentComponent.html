@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="P-C Communication (using @api)">
+        <lightning-radio-group
+            name="colors"
+            label="Select Color"
+            options={options}
+            value={value}
+            type="radio"
+            onchange={handleChange}
+            class="slds-p-around_medium" >
+        </lightning-radio-group>
+
+        <c-display-color-child-component
+            selected-color={value}
+            class="slds-p-around_medium" >
+        </c-display-color-child-component>
+
+    </lightning-card>
+</template>

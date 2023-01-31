@@ -1,0 +1,27 @@
+<template>
+
+    <lightning-card>
+
+        <lightning-input type="number" label="Enter height (in meters)" onchange={handleHeight} step="any" class="slds-p-horizontal_medium"></lightning-input>
+
+        <lightning-input type="number" label="Enter weight (in kg)" onchange={handleWeight} step="any" class="slds-p-around_medium"></lightning-input>
+
+        <lightning-button variant="Neutral" label="Calculate BMI" title="Calculate BMI" onclick={handleOnClick} class="slds-p-around_medium"></lightning-button>
+
+        <lightning-input type="checkbox" label="Get previous BMI values" name="previus BMI" onclick={handleOnTick} class="slds-p-around_medium"></lightning-input>
+
+        <div if:true={isVisible1} class="slds-p-around_x-small">
+
+            <p>{showBMI}</p>
+
+        </div>
+
+        <div if:true={isVisible2} class="slds-p-around_x-small">
+
+            <p>{showPrevBMI}</p>
+
+        </div>
+
+    </lightning-card>
+
+</template>
